@@ -4,6 +4,7 @@ An intelligent, interactive tool built with Python to analyze your resume agains
 ---
 
 🔍 Features
+
 <br>
 📄 Upload and extract text from your resume (PDF format)
 
@@ -46,7 +47,9 @@ You can run the project in Google Colab:
 1.Install the required libraries:
 
   !pip install nltk
+  <br>
   !pip install PyMuPDF
+  <br>
 2.Upload your resume:
 
 from google.colab import files
