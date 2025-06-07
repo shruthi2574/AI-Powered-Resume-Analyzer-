@@ -1,8 +1,10 @@
 🧠 AI-Powered Resume Analyzer
 An intelligent, interactive tool built with Python to analyze your resume against a job description. It extracts key skills and keywords from both inputs and calculates a match score, helping job seekers tailor their resumes to specific job roles.
+
 ---
 
 🔍 Features
+<br>
 📄 Upload and extract text from your resume (PDF format)
 
 🧾 Input job descriptions manually
@@ -37,12 +39,14 @@ Google Colab (recommended for ease of use)
 Resume in .pdf format
 
 ⚙️ Installation & Execution
+<br>
 You can run the project in Google Colab:
+<br>
 
 1.Install the required libraries:
 
-!pip install nltk
-!pip install PyMuPDF
+  !pip install nltk
+  !pip install PyMuPDF
 2.Upload your resume:
 
 from google.colab import files
@@ -61,6 +65,7 @@ uploaded = files.upload()
 ---
 
 💡 Example Output
+<br>
 
 📋 Paste the job description below:
 We are hiring a software engineer with experience in Python, APIs, Machine Learning, SQL, and version control tools like Git.
