@@ -1,0 +1,58 @@
+# ✅ Step 1: Install required libraries
+!pip install nltk
+!pip install PyMuPDF
+
+# ✅ Step 2: Import libraries
+import nltk
+import fitz  # PyMuPDF
+from nltk.tokenize import RegexpTokenizer
+from nltk.corpus import stopwords
+from google.colab import files
+import string
+
+# ✅ Step 3: Download NLTK data
+nltk.download('punkt')
+nltk.download('stopwords')
+
+# ✅ Step 4: Preprocessing functions
+tokenizer = RegexpTokenizer(r'\w+')
+stop_words = set(stopwords.words('english'))
+
+def clean_and_tokenize(text):
+    text = text.lower()
+    tokens = tokenizer.tokenize(text)
+    return set(word for word in tokens if word not in stop_words and word not in string.punctuation)
+
+# ✅ Step 5: Upload Resume
+print("📤 Upload your resume (PDF format):")
+uploaded = files.upload()
+
+resume_text = ""
+for filename in uploaded.keys():
+    doc = fitz.open(filename)
+    for page in doc:
+        resume_text += page.get_text()
+
+# ✅ Step 6: Input Job Description
+print("\n📋 Paste the job description below:")
+job_description = input()
+
+# ✅ Step 7: Keyword Matching
+resume_keywords = clean_and_tokenize(resume_text)
+job_keywords = clean_and_tokenize(job_description)
+
+common_keywords = resume_keywords.intersection(job_keywords)
+missing_keywords = job_keywords - resume_keywords
+match_score = len(common_keywords) / len(job_keywords) * 100 if job_keywords else 0
+
+# ✅ Step 8: Display Results
+print("\n✅ Matching Keywords:")
+print(", ".join(sorted(common_keywords)) if common_keywords else "No matches found.")
+
+print(f"\n📈 Resume Match Score: {match_score:.2f}%")
+
+if missing_keywords:
+    print("\n🔍 Suggested Skills or Keywords to Improve:")
+    print(", ".join(sorted(missing_keywords)))
+else:
+    print("\n🎯 Great! Your resume covers all required keywords.")
