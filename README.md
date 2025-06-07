@@ -46,7 +46,9 @@ You can run the project in Google Colab:
 1.Install the required libraries:
 
   !pip install nltk
+  <br>
 !pip install PyMuPDF
+<br>
 
 2.Upload your resume:
 
@@ -92,7 +94,6 @@ resume-analyzer/
 ---
 
 ## 🙋‍♀️ Author
-
 **Gugulothu Shruthi**  
 B.Tech,CSE—Narayanamma Institute of Technology  
 ✉️ [gugulothushruthi@gmail.com](mailto:gugulothushruthi@gmail.com)
