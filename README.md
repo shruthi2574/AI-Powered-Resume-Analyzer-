@@ -31,39 +31,40 @@ An intelligent, interactive tool built with Python to analyze your resume agains
 
 ## 🚀 Getting Started
 
+## 🚀 Getting Started
+
 ### Prerequisites
-Python 3.x (if running locally)
 
-Google Colab (recommended for ease of use)
+- Python 3.x (if running locally)  
+- Google Colab (recommended for ease of use)  
+- Resume in `.pdf` format  
 
-Resume in .pdf format
+### Installation & Execution
 
-⚙️ Installation & Execution
-<br>
 You can run the project in Google Colab:
-<br>
 
-1.Install the required libraries:
+1. **Install the required libraries:**
 
-  !pip install nltk
-  <br>
-!pip install PyMuPDF
-<br>
+    ```python
+    !pip install nltk
+    !pip install PyMuPDF
+    ```
 
-2.Upload your resume:
+2. **Upload your resume:**
 
-from google.colab import files
-uploaded = files.upload()
+    ```python
+    from google.colab import files  
+    uploaded = files.upload()
+    ```
 
-3.Paste the job description when prompted.
+3. **Paste the job description** when prompted.
 
-4.The script will output:
+4. **The script will output:**
 
-✅ Matching keywords
+    - ✅ Matching keywords  
+    - 🧩 Missing skills  
+    - 📊 Resume match score
 
-📉 Missing skills
-
-📈 Resume match score
 
 ---
 
