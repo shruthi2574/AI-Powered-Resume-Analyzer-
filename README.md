@@ -63,20 +63,20 @@ You can run the project in Google Colab:
 
 
 ---
+## 💡 Example Output
 
-💡 Example Output
-<br>
-
-📋 Paste the job description below:
+📋 **Job Description**:  
 We are hiring a software engineer with experience in Python, APIs, Machine Learning, SQL, and version control tools like Git.
 
-✅ Matching Keywords:
-python, machine, learning, sql, git
+✅ **Matching Keywords**:  
+`python`, `machine`, `learning`, `sql`, `git`
 
-📈 Resume Match Score: 83.33%
+📈 **Resume Match Score**:  
+`83.33%`
 
-🔍 Suggested Skills or Keywords to Improve:
-apis, control, tools, version
+🔍 **Suggested Skills or Keywords to Improve**:  
+`apis`, `control`, `tools`, `version`
+
 
 ---
 
