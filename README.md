@@ -29,7 +29,6 @@ An intelligent, interactive tool built with Python to analyze your resume agains
 
 ---
 
-## 🚀 Getting Started
 
 ## 🚀 Getting Started
 
