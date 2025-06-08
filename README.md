@@ -3,17 +3,14 @@ An intelligent, interactive tool built with Python to analyze your resume agains
 
 ---
 
-🔍 Features
-<br>
-📄 Upload and extract text from your resume (PDF format)
+## 🔍 Features
 
-🧾 Input job descriptions manually
+- 📄 **Upload Resume**: Extracts text from PDF resume files  
+- 🧾 **Input Job Description**: Manually enter the job description  
+- 🔎 **Keyword Matching**: Identifies common and missing keywords  
+- 📊 **Match Score**: Calculates a resume-job description relevance score  
+- 💡 **Suggestions**: Recommends keywords to improve your resume
 
-🔎 Identifies matching and missing keywords
-
-📊 Calculates a resume-job match score
-
-💡 Suggests keywords to improve your resume relevance
 
 ---
 
